@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="tree_photo.css"/>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background-color: orange;
+			}
+			h2{
+				width: 200px;
+				height: 40px;
+				line-height: 40px;
+				font-size: 25px;
+				font-weight: bolder;
+				margin: 0 auto;
+				/*margin: 40px auto;*/
+			}
+			.one_year{
+				width: 1600px;
+				height: 400px;
+				/*background-color: red;*/
+				margin-top:60px;
+			}
+			.index{
+				position: relative;
+				top: -50px;
+				left: 20px;
+			}
+			.index h5{
+				width: 40px;
+				height: 40px;
+				color: white;
+				position: absolute;
+				z-index: 1;
+				left:8px;
+				top: 10px;
+			}
+			.index span{
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				background-color: black;
+				position: absolute;
+				animation: change 3s linear 0s infinite normal;
+			}
+			.pic ul{
+				list-style: none;
+				width: 1600px;
+				height: 400px;
+			}
+			.pic ul li{
+				float: left;
+				width: 400px;
+				height: 400px;
+				box-sizing: border-box;
+				margin-right: 5px;
+				border: 5px solid white;
+				background-repeat: no-repeat;
+				background-size: contain;
+				/*background-size: auto 400px;*/
+				/*border-radius:0px ;*/
+				transition: border-radius 1s linear 0s;
+			}
+			/*.one_year .pic ul li:hover{
+				border-radius:200px
+			}
+			.pic ul li:nth-child(1){
+				background-image: url(pic/jacky/1.png);
+			}
+			.pic ul li:nth-child(2){
+				background-image: url(pic/jacky/2.jpg);
+			}
+			.pic ul li:nth-child(3){
+				background-image: url(pic/jacky/3.jpg);
+			}*/
+			
+		</style>
+	</head>
+	<body>
+		<h2>小树成长相片墙</h2>
+			<div class="one_year">
+					<div class="index">
+						<h5>1岁</h5>
+						<span id="index"></span> <!--index背景动画-->
+					</div>
+					<div class="pic">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

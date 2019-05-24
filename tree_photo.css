@@ -1,0 +1,23 @@
+@keyframes change{
+				0%{border-radius: 20px;}
+				20%{border-radius: 0px;transform: scale(1.2)}
+				40%{ transform: rotateZ(360deg) scale(1.2)}
+				/*60%{border-radius: 0px; transform: rotateZ(360deg) scale(1.5) }*/
+				80%{scale(1);  border-radius: 15px; opacity: 0.7; }
+				90%{scale(1);  border-radius: 15px; opacity: 0.5; }
+				100%{scale(1); border-radius: 20px; opacity: 1; }
+			}
+			
+			
+		.one_year .pic ul li:hover{
+				border-radius:200px
+			}
+			.pic ul li:nth-child(1){
+				background-image: url(pic/1.png);
+			}
+			.pic ul li:nth-child(2){
+				background-image: url(pic/2.png);
+			}
+			.pic ul li:nth-child(3){
+				background-image: url(pic/3.png);
+			}
